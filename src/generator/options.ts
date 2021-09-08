@@ -1,3 +1,5 @@
+import { EmitBlockKind } from "./emit-block";
+
 export interface GenerateCodeOptions {
   emitDMMF?: boolean;
   emitTranspiledCode?: boolean;
@@ -5,6 +7,7 @@ export interface GenerateCodeOptions {
   useOriginalMapping?: boolean;
   useUncheckedScalarInputs?: boolean;
   emitIdAsIDType?: boolean;
+  emitOnly?: EmitBlockKind[];
 
   /* internal options */
   outputDirPath: string;
