@@ -322,16 +322,31 @@ export const generateResolversOutputsImports = createImportGenerator(
 export const generateArgsImports = createImportGenerator(argsFolderName);
 function createImportGenerator(elementsDirName: string) {
   return (sourceFile: SourceFile, elementsNames: string[], level = 1) => {
+    // if (elementsDirName === "inputs") {
+    //   console.log("dev", sourceFile.getFilePath(), elementsNames);
+    // }
     const distinctElementsNames = [...new Set(elementsNames)].sort();
     for (const elementName of distinctElementsNames) {
+      if (elementsDirName === "inputs") {
+        // console.log(
+        //   (level === 0 ? "./" : "") +
+        //     path.posix.join(
+        //       ...Array(level).fill(".."),
+        //       elementsDirName,
+        //       elementName,
+        //     ),
+        //   sourceFile.getFilePath(),
+        // );
+      }
       sourceFile.addImportDeclaration({
         moduleSpecifier:
-          (level === 0 ? "./" : "") +
-          path.posix.join(
-            ...Array(level).fill(".."),
-            elementsDirName,
-            elementName,
-          ),
+          (level === 0 ? "./" : "") + elementsDirName === "inputs"
+            ? path.posix.join(...Array(level).fill(".."), elementsDirName)
+            : path.posix.join(
+                ...Array(level).fill(".."),
+                elementsDirName,
+                elementName,
+              ),
         // TODO: refactor to default exports
         // defaultImport: elementName,
         namedImports: [elementName],
