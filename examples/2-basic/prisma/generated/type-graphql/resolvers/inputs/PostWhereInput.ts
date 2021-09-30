@@ -2,11 +2,11 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { BoolFilter } from "../inputs/BoolFilter";
-import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { StringFilter } from "../inputs/StringFilter";
-import { StringNullableFilter } from "../inputs/StringNullableFilter";
-import { UserRelationFilter } from "../inputs/UserRelationFilter";
+import { BoolFilter } from "../inputs";
+import { DateTimeFilter } from "../inputs";
+import { StringFilter } from "../inputs";
+import { StringNullableFilter } from "../inputs";
+import { UserRelationFilter } from "../inputs";
 
 @TypeGraphQL.InputType({
   isAbstract: true

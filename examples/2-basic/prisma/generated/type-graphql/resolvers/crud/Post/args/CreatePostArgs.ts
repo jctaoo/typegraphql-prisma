@@ -1,6 +1,6 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { PostCreateInput } from "../../../inputs/PostCreateInput";
+import { PostCreateInput } from "../../../inputs";
 
 @TypeGraphQL.ArgsType()
 export class CreatePostArgs {

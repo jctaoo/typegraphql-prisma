@@ -1,7 +1,7 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { PostUpdateManyMutationInput } from "../../../inputs/PostUpdateManyMutationInput";
-import { PostWhereInput } from "../../../inputs/PostWhereInput";
+import { PostUpdateManyMutationInput } from "../../../inputs";
+import { PostWhereInput } from "../../../inputs";
 
 @TypeGraphQL.ArgsType()
 export class UpdateManyPostArgs {

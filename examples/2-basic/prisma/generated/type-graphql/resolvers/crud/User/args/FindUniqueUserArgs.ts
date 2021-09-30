@@ -1,6 +1,6 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { UserWhereUniqueInput } from "../../../inputs/UserWhereUniqueInput";
+import { UserWhereUniqueInput } from "../../../inputs";
 
 @TypeGraphQL.ArgsType()
 export class FindUniqueUserArgs {

@@ -2,8 +2,8 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { PostScalarWhereInput } from "../inputs/PostScalarWhereInput";
-import { PostUpdateManyMutationInput } from "../inputs/PostUpdateManyMutationInput";
+import { PostScalarWhereInput } from "../inputs";
+import { PostUpdateManyMutationInput } from "../inputs";
 
 @TypeGraphQL.InputType({
   isAbstract: true

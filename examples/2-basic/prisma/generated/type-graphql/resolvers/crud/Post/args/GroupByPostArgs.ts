@@ -1,8 +1,8 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { PostOrderByInput } from "../../../inputs/PostOrderByInput";
-import { PostScalarWhereWithAggregatesInput } from "../../../inputs/PostScalarWhereWithAggregatesInput";
-import { PostWhereInput } from "../../../inputs/PostWhereInput";
+import { PostOrderByInput } from "../../../inputs";
+import { PostScalarWhereWithAggregatesInput } from "../../../inputs";
+import { PostWhereInput } from "../../../inputs";
 import { PostScalarFieldEnum } from "../../../../enums/PostScalarFieldEnum";
 
 @TypeGraphQL.ArgsType()

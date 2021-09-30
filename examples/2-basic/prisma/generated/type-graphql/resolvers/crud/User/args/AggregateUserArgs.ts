@@ -1,8 +1,8 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { UserOrderByInput } from "../../../inputs/UserOrderByInput";
-import { UserWhereInput } from "../../../inputs/UserWhereInput";
-import { UserWhereUniqueInput } from "../../../inputs/UserWhereUniqueInput";
+import { UserOrderByInput } from "../../../inputs";
+import { UserWhereInput } from "../../../inputs";
+import { UserWhereUniqueInput } from "../../../inputs";
 
 @TypeGraphQL.ArgsType()
 export class AggregateUserArgs {

@@ -2,10 +2,10 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperationsInput";
-import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
+import { BoolFieldUpdateOperationsInput } from "../inputs";
+import { DateTimeFieldUpdateOperationsInput } from "../inputs";
+import { NullableStringFieldUpdateOperationsInput } from "../inputs";
+import { StringFieldUpdateOperationsInput } from "../inputs";
 
 @TypeGraphQL.InputType({
   isAbstract: true

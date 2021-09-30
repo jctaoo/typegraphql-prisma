@@ -1,7 +1,7 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { UserUpdateInput } from "../../../inputs/UserUpdateInput";
-import { UserWhereUniqueInput } from "../../../inputs/UserWhereUniqueInput";
+import { UserUpdateInput } from "../../../inputs";
+import { UserWhereUniqueInput } from "../../../inputs";
 
 @TypeGraphQL.ArgsType()
 export class UpdateUserArgs {

@@ -2,8 +2,8 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { PostCreateWithoutAuthorInput } from "../inputs/PostCreateWithoutAuthorInput";
-import { PostWhereUniqueInput } from "../inputs/PostWhereUniqueInput";
+import { PostCreateWithoutAuthorInput } from "../inputs";
+import { PostWhereUniqueInput } from "../inputs";
 
 @TypeGraphQL.InputType({
   isAbstract: true

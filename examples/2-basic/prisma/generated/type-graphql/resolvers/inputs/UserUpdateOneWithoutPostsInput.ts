@@ -2,11 +2,11 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { UserCreateOrConnectWithoutPostsInput } from "../inputs/UserCreateOrConnectWithoutPostsInput";
-import { UserCreateWithoutPostsInput } from "../inputs/UserCreateWithoutPostsInput";
-import { UserUpdateWithoutPostsInput } from "../inputs/UserUpdateWithoutPostsInput";
-import { UserUpsertWithoutPostsInput } from "../inputs/UserUpsertWithoutPostsInput";
-import { UserWhereUniqueInput } from "../inputs/UserWhereUniqueInput";
+import { UserCreateOrConnectWithoutPostsInput } from "../inputs";
+import { UserCreateWithoutPostsInput } from "../inputs";
+import { UserUpdateWithoutPostsInput } from "../inputs";
+import { UserUpsertWithoutPostsInput } from "../inputs";
+import { UserWhereUniqueInput } from "../inputs";
 
 @TypeGraphQL.InputType({
   isAbstract: true

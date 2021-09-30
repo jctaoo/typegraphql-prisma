@@ -1,8 +1,8 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { UserOrderByInput } from "../../../inputs/UserOrderByInput";
-import { UserScalarWhereWithAggregatesInput } from "../../../inputs/UserScalarWhereWithAggregatesInput";
-import { UserWhereInput } from "../../../inputs/UserWhereInput";
+import { UserOrderByInput } from "../../../inputs";
+import { UserScalarWhereWithAggregatesInput } from "../../../inputs";
+import { UserWhereInput } from "../../../inputs";
 import { UserScalarFieldEnum } from "../../../../enums/UserScalarFieldEnum";
 
 @TypeGraphQL.ArgsType()

@@ -1,6 +1,6 @@
 import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
-import { PostWhereInput } from "../../../inputs/PostWhereInput";
+import { PostWhereInput } from "../../../inputs";
 
 @TypeGraphQL.ArgsType()
 export class DeleteManyPostArgs {

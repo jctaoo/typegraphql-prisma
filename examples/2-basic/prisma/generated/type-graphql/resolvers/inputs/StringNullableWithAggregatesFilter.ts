@@ -2,9 +2,9 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { NestedIntNullableFilter } from "../inputs/NestedIntNullableFilter";
-import { NestedStringNullableFilter } from "../inputs/NestedStringNullableFilter";
-import { NestedStringNullableWithAggregatesFilter } from "../inputs/NestedStringNullableWithAggregatesFilter";
+import { NestedIntNullableFilter } from "../inputs";
+import { NestedStringNullableFilter } from "../inputs";
+import { NestedStringNullableWithAggregatesFilter } from "../inputs";
 
 @TypeGraphQL.InputType({
   isAbstract: true

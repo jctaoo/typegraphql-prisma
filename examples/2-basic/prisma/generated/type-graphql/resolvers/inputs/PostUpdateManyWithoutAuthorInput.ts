@@ -2,13 +2,13 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { PostCreateOrConnectWithoutAuthorInput } from "../inputs/PostCreateOrConnectWithoutAuthorInput";
-import { PostCreateWithoutAuthorInput } from "../inputs/PostCreateWithoutAuthorInput";
-import { PostScalarWhereInput } from "../inputs/PostScalarWhereInput";
-import { PostUpdateManyWithWhereWithoutAuthorInput } from "../inputs/PostUpdateManyWithWhereWithoutAuthorInput";
-import { PostUpdateWithWhereUniqueWithoutAuthorInput } from "../inputs/PostUpdateWithWhereUniqueWithoutAuthorInput";
-import { PostUpsertWithWhereUniqueWithoutAuthorInput } from "../inputs/PostUpsertWithWhereUniqueWithoutAuthorInput";
-import { PostWhereUniqueInput } from "../inputs/PostWhereUniqueInput";
+import { PostCreateOrConnectWithoutAuthorInput } from "../inputs";
+import { PostCreateWithoutAuthorInput } from "../inputs";
+import { PostScalarWhereInput } from "../inputs";
+import { PostUpdateManyWithWhereWithoutAuthorInput } from "../inputs";
+import { PostUpdateWithWhereUniqueWithoutAuthorInput } from "../inputs";
+import { PostUpsertWithWhereUniqueWithoutAuthorInput } from "../inputs";
+import { PostWhereUniqueInput } from "../inputs";
 
 @TypeGraphQL.InputType({
   isAbstract: true

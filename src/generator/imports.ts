@@ -327,7 +327,16 @@ function createImportGenerator(elementsDirName: string) {
     // }
     const distinctElementsNames = [...new Set(elementsNames)].sort();
     for (const elementName of distinctElementsNames) {
-      if (elementsDirName === "inputs") {
+      const specifier =
+        (level === 0 ? "./" : "") +
+        (elementsDirName === "inputs"
+          ? path.posix.join(...Array(level).fill(".."), elementsDirName)
+          : path.posix.join(
+              ...Array(level).fill(".."),
+              elementsDirName,
+              elementName,
+            ));
+      if (elementsDirName === "args") {
         // console.log(
         //   (level === 0 ? "./" : "") +
         //     path.posix.join(
@@ -337,16 +346,17 @@ function createImportGenerator(elementsDirName: string) {
         //     ),
         //   sourceFile.getFilePath(),
         // );
+        // console.log(
+        //   level,
+        //   elementsDirName,
+        //   sourceFile
+        //     .getFilePath()
+        //     .replace(process.cwd() + "/prisma/generated/type-graphql", ""),
+        //   specifier,
+        // );
       }
       sourceFile.addImportDeclaration({
-        moduleSpecifier:
-          (level === 0 ? "./" : "") + elementsDirName === "inputs"
-            ? path.posix.join(...Array(level).fill(".."), elementsDirName)
-            : path.posix.join(
-                ...Array(level).fill(".."),
-                elementsDirName,
-                elementName,
-              ),
+        moduleSpecifier: specifier,
         // TODO: refactor to default exports
         // defaultImport: elementName,
         namedImports: [elementName],
